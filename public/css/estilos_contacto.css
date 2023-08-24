@@ -81,6 +81,53 @@ form.form-contacto{
     height: 8.5vh;
 }
 
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.texto-logo{
+    font-size: 10px;
+    text-align: center;
+    width: 14vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+ul{
+    margin: 0 !important;
+}
+
+.centrar-a{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px;
+}
+
+.centrar-a a{
+    font-weight: 700;
+}
+
+.centrar-a a:hover{
+    transform: scale(1.03);
+    border-bottom: 4px solid #BFAF00;
+}
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+    font-size: 3.5rem;
+}
+}
+
 @keyframes gradient-animation {
 	0% {
 		background-position: 0% 50%;
