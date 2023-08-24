@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nombre{
+    color: #900c3f;
+}
+
+.top{
+    color: #0e2430;
+    height: 100vh;
+}
+
+.mid{
+    background-color: #0e2430;
+    color: #c5ceae;
+}
+
+
+.bot{
+    background-color: #b9c3c4;
+}
+
+
+.Colors{
+color: #900c3f;
+color: #fff o white;
+color:#000;
+color:#b9c3c4;
+color:#0e2430;
+color:#c5ceae;
+color:#4e6b66;
+color:#176585;
+}
