@@ -1,0 +1,8 @@
+para hacer pull request
+1-. ir a "pull request"
+2.- seleccionar tu rama a revisar para fusionar
+3.-dar a new pull request
+4.-escoger tu rama 
+5.-revisar que todo esta correcto y te diga "able to merge"
+	5.1.- de no ser el caso el mismo github te da donde se encuentra el error
+6.-esperar que el lead confirme el merge.

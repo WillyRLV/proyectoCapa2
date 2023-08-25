@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <section id="section-uno-id" class="section-uno">
+        <h1>Hola bienvenido</h1>
+        <div  class="container">
+
+            <div class="card">
+                <img src="public/img/img_index/cachorros.jpg" width="200" />
+                <h2>card1</h2>
+                <p>breve descipcion de la tarjeta</p>
+            </div>
+            <div class="card">
+                <img src="public/img/img_index/cachorros.jpg" width="200" />
+                <h2>card1</h2>
+                <p>breve descipcion de la tarjeta</p>
+            </div>
+            <div class="card">
+                <img src="public/img/img_index/cachorros.jpg" width="200" />
+                <h2>card1</h2>
+                <p>breve descipcion de la tarjeta</p>
+            </div>
+            <div class="card">
+                <img src="public/img/img_index/cachorros.jpg" width="200" />
+                <h2>card1</h2>
+                <p>breve descipcion de la tarjeta</p>
+            </div>
+        </div>
+    </section>
+
 </body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        padding: 10px 10px 10px 10px;
+    }
+
+    /* para la section-uno */
+    .section-uno {
+        background-color: rgb(128, 119, 119);
+        min-height: 100vh;
+        height: auto;
+        /*vh = viewport ()*/
+    }
+
+    .container {
+        background-color: rgb(91, 138, 138);
+        width: 80%;
+        min-width: 200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px 0 10px 0;
+        gap: 7px;
+
+    }
+
+
+    /* diseño tarjetas */
+    .card {
+        border: 1px solid #8dc54d;
+        width: 250px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 8px;
+        gap: 10px;
+        padding: 30px 0 30px 0px;
+        /* margenes internes "arriba dereecha abajo izquiera" */
+    }
+
+
+    .card img {
+        border-radius: 10px;
+        box-shadow: 10px 4px 45px -15px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 4px 45px -15px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 4px 45px -15px rgba(0, 0, 0, 0.75);
+    }
+
+    .card h2 {
+        color: rgb(62, 44, 80);
+        position: relative;
+    }
+
+    .card h2::before {
+        position: absolute;
+        content: '';
+        border: 1px solid #12cbd8;
+        width: 55px;
+        bottom: 0;
+
+    }
+    
+
+    /* responsivo */
+    /*movil*/
+    @media screen and (max-width:767px) {
+        body{
+            background-color: red;
+        }
+        
+    }
+
+    /* tablet */
+
+    @media screen and (min-width:768px)  and (max-width:1023px) {
+        body{
+            background-color: rgb(0, 255, 98);
+        }
+        
+    }
+
+    /* pc */
+
+    @media screen  and (min-width:1024px) {
+        body{
+            background-color: rgb(0, 195, 255);
+        }
+        
+    }
+</style>
+
 </html>
