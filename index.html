@@ -10,7 +10,7 @@
 <body>
     <section id="section-uno-id" class="section-uno">
         <h1>Hola bienvenido</h1>
-        <div  class="container">
+        <div class="container">
 
             <div class="card">
                 <img src="public/img/img_index/cachorros.jpg" width="200" />
@@ -34,6 +34,21 @@
             </div>
         </div>
     </section>
+    <!-- section2 -->
+    <section id="section-dos-id" class="section-dos">
+        <h1>Hola bienvenido</h1>
+        <div class="container">
+            <!-- formulario -->
+            <form id="form" action="">
+
+                <input  id="input-dato" name="dato" type="text" >
+                <input id="input-dato" name="dato2" type="text" >
+                <input id="input-dato" name="dato3" type="text" >
+
+                <button id="button">click</button>
+            </form>
+        </div>
+    </section>
 
 </body>
 <style>
@@ -43,7 +58,7 @@
         box-sizing: border-box;
     }
 
-    body{
+    body {
         padding: 10px 10px 10px 10px;
     }
 
@@ -106,34 +121,72 @@
         bottom: 0;
 
     }
-    
+
 
     /* responsivo */
     /*movil*/
     @media screen and (max-width:767px) {
-        body{
+        body {
             background-color: red;
         }
-        
+
     }
 
     /* tablet */
 
-    @media screen and (min-width:768px)  and (max-width:1023px) {
-        body{
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        body {
             background-color: rgb(0, 255, 98);
         }
-        
+
     }
 
     /* pc */
 
-    @media screen  and (min-width:1024px) {
-        body{
+    @media screen and (min-width:1024px) {
+        body {
             background-color: rgb(0, 195, 255);
         }
-        
+
     }
 </style>
 
+<script>
+    const btn = document.getElementById('button');
+    const text = document.getElementById('input-dato');
+    const form = document.getElementById('form')
+
+    // click
+    // btn.onclick = () => {
+    //     console.log("hola " + text.value)
+    // }
+
+   //onsubmit
+    form.onsubmit = (e) => {
+        e.preventDefault();
+
+        const dato1 = e.target.dato.value;
+        const dato2 = e.target.dato2.value;
+        const dato3 = e.target.dato3.value;
+        console.log(dato1 +", "+ dato2 + ", " + dato3)
+    }
+
+    // onkeyup
+    // text.onkeyup = () => {
+    //     console.log("hola " + text.value)
+    // }
+
+    // onchange
+    // text.onchange = () => {
+    //     console.log("hola " + text.value)
+    // }
+
+    // 
+    // window.onload = () => {
+    //     console.log("hola pagina nueva")
+    // }
+
+
+
+</script>
 </html>
