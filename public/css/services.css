@@ -1,0 +1,61 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b9c3c4
+    ;
+    color: #333;
+}
+
+header {
+    background-color: #b9c3c4;
+    color: #a51515;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+font-weight: bold; 
+}
+
+h1, h3 {
+ text-decoration: underline; 
+}
+
+.servicio {
+    background-color: #2A3E7E;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}
+.card {
+    width: 200px; /* Ancho fijo */
+    border: none;
+    border-radius: 0;
+    margin: 0 10px; /* Espacio entre las cartas */
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    border: 4px solid #3498db; /* Cambia el color al que desees */
+    border-radius: 0;
+    width: 200px;
+    margin: 0 10px;
+}
+
+h5.card-title {
+    font-weight: bold;
+    font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
+}
