@@ -1,0 +1,141 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+div.contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 0;
+}
+
+div.contenedor-formulario{
+    background-color: rgba(255, 255, 255);
+    width: 60%;
+    height: 85vh;
+    margin: auto;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px black;
+    overflow: hidden;
+}
+
+.contenedor-titulo{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #0e2430, #176585 ,#0e2430, #176585);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+    margin: 0 10px;
+    color: #fff;
+    font-weight: 300;
+
+}
+
+form.form-contacto{
+    margin: auto;
+    height: auto;
+    width: 90%;
+}
+
+.boton{
+    display: flex !important;
+    justify-content: right !important;
+}
+
+.boton button{
+    background-color: #0e2430;
+    border-color: #0e2430;
+}
+
+.boton button:hover{
+    background-color: #176585;
+    border-color: #176585;
+    transform: scale(1.03);
+}
+
+.input-group{
+    margin: 22px 0;   
+}
+
+.gradient {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #c5ceae, #4e6b66, #900c3f);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+.img-logo{
+    height: 8.5vh;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.texto-logo{
+    font-size: 10px;
+    text-align: center;
+    width: 14vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+ul{
+    margin: 0 !important;
+}
+
+.centrar-a{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px;
+}
+
+.centrar-a a{
+    font-weight: 700;
+}
+
+.centrar-a a:hover{
+    transform: scale(1.03);
+    border-bottom: 4px solid #BFAF00;
+}
+
+@media (min-width: 768px) {
+.bd-placeholder-img-lg {
+    font-size: 3.5rem;
+}
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
